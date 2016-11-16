@@ -22,3 +22,17 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+ 
+$factory->define(App\Share::class,function($faker){
+
+return[
+'name'=>$faker->name,
+'symobol'=>str_random(10),
+'count'=>rand(111,999),
+
+];
+
+
+
+} );
